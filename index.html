@@ -14,7 +14,7 @@
             <p>Control the speed of the fan</p>
             <div class="control">
                 <span>Speed</span>
-                <p id="fanSpeed">0</p>
+                <p id="fanSpeed"><input type="number"></p>
             </div>
         </div>
         <div class="item">
@@ -22,7 +22,10 @@
             <p>Turn on or off the bulb</p>
             <div class="control">
                 <span>State</span>
-                <p id="bulbState">Off</p>
+                <p id="bulbState"><select name="ON/OFF">
+                    <option value="ON">ON</option>
+                    <option value="OFF">OFF</option>
+                </select></p>
             </div>
         </div>
         <div class="item">
@@ -30,7 +33,11 @@
             <p>Control the color of the led</p>
             <div class="control">
                 <span>Color</span>
-                <p id="ledColor">Off</p>
+                <p id="ledColor"><select name="RGB" id="">
+                    <option value="green">Green</option>
+                    <option value="blue">Blue</option>
+                    <option value="red">Red</option>
+                </select></p>
             </div>
         </div>
         <div class="item">
@@ -38,11 +45,14 @@
             <p>Control state & temp of Ac</p>
             <div class="control">
                 <span>State</span>
-                <p id="acState">Off</p>
+                <p id="acState"><select name="ON/OFF">
+                <option value="ON">ON</option>
+                <option value="OFF">OFF</option>
+            </select></p>
             </div>
             <div class="control">
                 <span>Temperature</span>
-                <p id="acTemp">23</p>
+                <p id="acTemp"></p>
             </div>
         </div>
     </div>
